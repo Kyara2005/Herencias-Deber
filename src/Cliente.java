@@ -7,4 +7,9 @@ public class Cliente extends Persona {
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
     }
+    @Override
+    public void mostrarRol() {
+        System.out.println("Soy un cliente del banco.");
+    }
 }
+
