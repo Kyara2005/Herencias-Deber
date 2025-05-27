@@ -10,12 +10,11 @@ public abstract class Persona {
         this.direccion = direccion;
         this.telefono = telefono;
     }
-
+//Metodos
     public void actualizarDatos(String direccion, String telefono) {
         this.direccion = direccion;
         this.telefono = telefono;
     }
-
     public abstract void mostrarRol();
 }
 
