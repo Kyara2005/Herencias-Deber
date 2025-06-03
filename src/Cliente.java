@@ -1,15 +1,32 @@
 public class Cliente extends Persona {
-    private String numeroCuenta;
-    private double saldo;
-
-    public Cliente(String nombre, String cedula, String direccion, String telefono, String numeroCuenta, double saldo) {
+    public Cliente(String nombre, String cedula, String direccion, String telefono) {
         super(nombre, cedula, direccion, telefono);
-        this.numeroCuenta = numeroCuenta;
-        this.saldo = saldo;
     }
+
+    public boolean ingresarAlSistema() {
+        return true;
+    }
+
+    public void registrarCuenta(String tipo) {
+        System.out.println("Cuenta tipo '" + tipo + "' registrada.");
+    }
+
+    public void solicitarPrestamo(double monto) {
+        System.out.println("Préstamo de $" + monto + " solicitado.");
+    }
+
+    public void agregarTarjetaCredito(String tarjeta) {
+        System.out.println("Tarjeta '" + tarjeta + "' agregada.");
+    }
+
+    public void verResumenFinanciero() {
+        System.out.println("Resumen financiero de " + nombre);
+    }
+
     @Override
     public void mostrarRol() {
-        System.out.println("Soy un cliente del banco.");
+        System.out.println("Soy un Cliente");
     }
 }
+
 
